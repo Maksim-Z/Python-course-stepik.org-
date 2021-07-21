@@ -22,10 +22,10 @@ for n in range(games):
             results[line[i]] = [1, 0, 0, 0, 0]
         else:
             results[line[i]][0] += 1
-    if line[1] > line[3]:
+    if int(line[1]) > int(line[3]):
         results[line[0]][1] += 1
         results[line[2]][3] += 1
-    elif line[1] == line[3]:
+    elif int(line[1]) == int(line[3]):
         results[line[0]][2] += 1
         results[line[2]][2] += 1
     else:
